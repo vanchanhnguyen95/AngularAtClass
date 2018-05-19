@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Register forms</h1>
+  <div class="form-group">
+    <span>Email</span>
+    <input class="form-control" [(ngModel)] ="Email" #obEmail [value]="Email">
+  </div>
+  <div class="form-group">
+    <span>FullName</span>
+    <input  class="form-control" #obFullName>
+  </div>
+  <button (click)="Submit(obFullName.value)" class="btn btn-success">Submit</button>
+  <div class="form-group">
+      <span>Email: {{Email}} </span><br />
+      <span>FullName: {{FullName}} </span>
+  </div>
+</div>

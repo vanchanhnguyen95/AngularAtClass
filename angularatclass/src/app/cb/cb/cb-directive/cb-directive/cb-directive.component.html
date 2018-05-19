@@ -1,0 +1,79 @@
+<!-- <div *ngIf="number%2!=0 else tmpSoChan">
+  số lẻ
+</div>
+
+
+<ng-template #tmpSoChan>
+  số chẵn
+</ng-template> -->
+
+<!-- 
+<button (click)="DangXuat()">Đăng xuất</button>
+<div *ngIf="status ; else ChuaDangNhap">
+  <h5>Xin chào <b>cybersoft</b></h5>
+</div>
+
+<ng-template #ChuaDangNhap>
+  <h5>Chưa đăng nhập</h5>
+</ng-template> -->
+
+<!-- <div class="container">
+  <div [ngSwitch]="dkSwitch">
+    <div style="color: red" *ngSwitchCase="'red'">red</div>
+    <div style="color: orange" *ngSwitchCase="'orange'">orange</div>
+    <div style="color:green" *ngSwitchCase="'green'">green</div>
+  </div>
+
+  <select #sl (change)="DoiMau(sl.value)">
+      <option value="orange">Màu cam</option>
+      <option value="red">Màu đỏ</option>
+      <option value="green">Màu lục</option>
+  </select>
+
+</div> -->
+
+
+
+
+
+<app-cb-item *ngFor="let sv of DSNV; let i = index"> 
+  {{sv.HoTen}}
+</app-cb-item>
+
+
+
+
+<!-- 
+
+<ng-container *ngTemplateOutlet="tableNhanVien"></ng-container>
+<ng-template #tableNhanVien>
+<div class="container">
+
+<ng-content></ng-content>
+<table class="table">
+  <thead>
+    <th>Họ Tên</th>
+    <th>Tuổi</th>
+  </thead>
+  <tbody>
+    <tr [ngClass]="{success:(i%2==0)}" *ngFor="let sv of DSNV; let i = index">
+      <ng-container *ngIf="i%2==0">
+        <td>
+          {{sv.HoTen}}
+        </td>
+        <td>
+          {{sv.Tuoi}}
+        </td>
+      </ng-container>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+</ng-template> -->
+
+<!--
+  Ghi chú
+  <ng-content></ng-content>:Nhận giá trị từ component truyền vào
+
+-->

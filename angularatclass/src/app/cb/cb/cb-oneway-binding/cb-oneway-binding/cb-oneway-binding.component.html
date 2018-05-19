@@ -1,0 +1,17 @@
+<!--2 cách binding dữ liệu modal -> view -->
+<!-- <p>Họ tên: {{sinhVien.hoten}} - Tuổi {{sinhVien.tuoi}}</p>
+
+<p [innerHTML]="sinhVien.hoten +' - tuổi: '  + sinhVien.tuoi"> </p>
+
+<p id="{{sinhVien.hoten}}"></p>
+<p [id]="sinhVien.hoten"></p> -->
+
+
+
+<!-- <input #object> #: object đại diện cho thẻ chứa nó -->
+
+<!-- <button (click)="DisplayName(object.value)">Click me</button>
+
+<p>Họ tên:{{name}} </p> -->
+
+<input [(ngModel)]="name"> {{name}}
